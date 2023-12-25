@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        transform: translate(49vw,40vh);
+        border-radius: 5px;
+        font-family:cursive;
+        font-size: 3rem;
+        padding: 3px;
+        width: max-content;
+        background-color: lightblue;
+    }
+    button:hover{
+        background-color: rgb(154, 207, 225);
+        padding: 5px;
+        font-style: 3.1rem;
+
+    }
+</style>
+<body style="background-color: black;">
+<button class="btn">click</button>
+</body>
+<script>
+ 
+  document.querySelector('.btn').addEventListener('click',()=>{
+      let song=new Audio('audio.mp3');
+      song.play();
+  })
+
+</script>
+</html>
